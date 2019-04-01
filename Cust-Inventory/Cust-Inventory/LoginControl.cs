@@ -10,24 +10,30 @@ using System.Windows.Forms;
 
 namespace Cust_Inventory
 {
-    public partial class UsersControl : UserControl
+    public partial class LoginControl : UserControl
     {
-        public UsersControl()
+        public LoginControl()
         {
             InitializeComponent();
         }
 
-        private static UsersControl _instance;
-        public static UsersControl Instance
+        private static LoginControl _instance;
+        public static LoginControl Instance
         {
             get
             {
                 if (_instance == null)
                 {
-                    _instance = new UsersControl();
+                    _instance = new LoginControl();
                 }
                 return _instance;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            
         }
     }
 }

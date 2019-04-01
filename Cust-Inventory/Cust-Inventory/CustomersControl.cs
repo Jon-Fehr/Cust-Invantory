@@ -16,6 +16,18 @@ namespace Cust_Inventory
         {
             InitializeComponent();
         }
+        private static CustomersControl _instance;
+        public static CustomersControl Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new CustomersControl();
+                }
+                return _instance;
+            }
+        }
 
         private void rBNameSearch_CheckedChanged(object sender, EventArgs e)
         {
@@ -82,5 +94,12 @@ namespace Cust_Inventory
             lblPhoneNumber.Hide();
             tBPhoneNumber.Hide();
         }
+
+        private void dGVCustLookUp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        
     }
 }

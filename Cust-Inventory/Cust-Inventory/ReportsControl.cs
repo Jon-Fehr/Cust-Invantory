@@ -16,5 +16,19 @@ namespace Cust_Inventory
         {
             InitializeComponent();
         }
+        private static ReportsControl _instance;
+        public static ReportsControl Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new ReportsControl();
+                }
+                return _instance;
+            }
+        }
+
+        
     }
 }

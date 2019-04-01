@@ -44,10 +44,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Controls.Add(this.label1);
             this.Name = "ReportsControl";
-            this.Size = new System.Drawing.Size(1229, 582);
+            this.Size = new System.Drawing.Size(1229, 792);
             this.ResumeLayout(false);
             this.PerformLayout();
 
